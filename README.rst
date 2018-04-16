@@ -1,12 +1,12 @@
 Rbin
 =====
 
-``Rbin`` and ``Rbinlist`` are simple shell scripts to easily access command-line executables installed in the ``bin`` and/or ``exec`` directories of R packages (which are not usually added to a user's PATH when the package is installed because doing so is against CRAN policy).  
+``Rbin`` and ``Rbinlist`` are shell scripts to easily call command-line executables installed in the ``bin`` and/or ``exec`` directories of R packages (which are not usually added to a user's PATH when the package is installed because doing so is against CRAN policy).  
 
 Installation
 ------------
 
-To use ``Rbin`` and ``Rbinlist`` add them to your path and mark them executable:: 
+To use ``Rbin`` and ``Rbinlist`` download them, mark them executable, and add them to your `PATH`:: 
     
     $ curl -O https://github.com/trevorld/Rbin/raw/master/Rbin
     $ curl -O https://github.com/trevorld/Rbin/raw/master/Rbinlist
@@ -67,3 +67,4 @@ Aliases
 You can also use ``Rbin`` to define a bash alias in a user's ``.bashrc`` file so that it appears that a program is on the user's path::
 
     alias example.R="Rbin optparse example.R"
+    alias knit="Rbin knitr knit"
