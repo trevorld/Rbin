@@ -11,7 +11,7 @@ To use ``Rbin`` and ``Rbinlist`` add them to your path and mark them executable:
     $ curl -O https://github.com/trevorld/Rbin/raw/master/Rbin
     $ curl -O https://github.com/trevorld/Rbin/raw/master/Rbinlist
     $ chmod u+x Rbin Rbinlist
-    $ cp R*bin $HOME/bin/
+    $ cp Rbin* $HOME/bin/
 
 Usage
 -----
