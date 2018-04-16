@@ -1,7 +1,7 @@
 Rexec
 =====
 
-``Rexec`` and ``Rlistexec`` are simple shell scripts to easily access command-line executables installed in the ``exec`` directory of R packages (which are not usually added to a user's PATH when the the package is installed because doing so is against CRAN policy).  
+``Rexec`` and ``Rlistexec`` are simple shell scripts to easily access command-line executables installed in the ``exec`` directory of R packages (which are not usually added to a user's PATH when the package is installed because doing so is against CRAN policy).  
 
 Installation
 ------------
