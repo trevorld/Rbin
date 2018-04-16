@@ -8,13 +8,15 @@ Installation
 
 To use ``Rexec`` and ``Rlistexec`` add them to your path and mark them executable:: 
     
-    chmod u+x Rexec Rlistexec
-    cp R*exec $HOME/bin/
+    $ curl -O https://github.com/trevorld/Rexec/raw/master/Rexec
+    $ curl -O https://github.com/trevorld/Rexec/raw/master/Rlistexec
+    $ chmod u+x Rexec Rlistexec
+    $ cp R*exec $HOME/bin/
 
 Usage
 -----
 
-Example usage using the example executables from my `optparse <github.com/trevorld/optparse>`_ package::
+Example usage using the example executables from my `optparse <https://github.com/trevorld/optparse>`_ package::
 
     $ Rlistexec optparse
     display_file.R
