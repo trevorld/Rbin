@@ -1,27 +1,27 @@
-Rexec
+Rbin
 =====
 
-``Rexec`` and ``Rlistexec`` are simple shell scripts to easily access command-line executables installed in the ``exec`` directory of R packages (which are not usually added to a user's PATH when the package is installed because doing so is against CRAN policy).  
+``Rbin`` and ``Rlistbin`` are simple shell scripts to easily access command-line executables installed in the ``bin`` and/or ``exec`` directories of R packages (which are not usually added to a user's PATH when the package is installed because doing so is against CRAN policy).  
 
 Installation
 ------------
 
-To use ``Rexec`` and ``Rlistexec`` add them to your path and mark them executable:: 
+To use ``Rbin`` and ``Rlistbin`` add them to your path and mark them executable:: 
     
-    $ curl -O https://github.com/trevorld/Rexec/raw/master/Rexec
-    $ curl -O https://github.com/trevorld/Rexec/raw/master/Rlistexec
-    $ chmod u+x Rexec Rlistexec
-    $ cp R*exec $HOME/bin/
+    $ curl -O https://github.com/trevorld/Rbin/raw/master/Rbin
+    $ curl -O https://github.com/trevorld/Rbin/raw/master/Rlistbin
+    $ chmod u+x Rbin Rlistbin
+    $ cp R*bin $HOME/bin/
 
 Usage
 -----
 
-Example usage using the example executables from my `optparse <https://github.com/trevorld/optparse>`_ package::
+Example usage using the example executables from the `optparse <https://github.com/trevorld/optparse>`_ package::
 
-    $ Rlistexec optparse
+    $ Rlistbin optparse
     display_file.R
     example.R
-    $ Rexec optparse example.R --help
+    $ Rbin optparse example.R --help
     Usage: /usr/local/lib/R/site-library/optparse/exec/example.R [options]
 
 
@@ -48,7 +48,7 @@ Example usage using the example executables from my `optparse <https://github.co
                     Show this help message and exit
 
 
-    $ Rexec optparse example.R -q --count=11 --generator=runif
+    $ Rbin optparse example.R -q --count=11 --generator=runif
     0.373417189577594
     0.657838996266946
     0.802908265497535
@@ -64,6 +64,6 @@ Example usage using the example executables from my `optparse <https://github.co
 Aliases
 -------
 
-You can also use ``Rexec`` to define a bash alias in a user's ``.bashrc`` file so that it appears that a program is on the user's path::
+You can also use ``Rbin`` to define a bash alias in a user's ``.bashrc`` file so that it appears that a program is on the user's path::
 
-    alias example.R="Rexec optparse example.R"
+    alias example.R="Rbin optparse example.R"

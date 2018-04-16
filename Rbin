@@ -10,5 +10,5 @@
 package=$1
 exec_name=$2
 exec_args=${@:3}
-exec_path=`Rscript -e "cat(system.file(\"exec/$exec_name\", package=\"$package\", mustWork=TRUE))"`
+exec_path=`Rscript -e "cat(system.file(c(\"bin/$exec_name\", \"exec/$exec_name\"), package=\"$package\", mustWork=TRUE))"`
 $exec_path $exec_args
