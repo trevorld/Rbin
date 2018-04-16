@@ -60,3 +60,10 @@ Example usage using the example executables from my `optparse <https://github.co
     0.541883816709742
     0.0226398415397853
     0.957296556560323
+
+Aliases
+-------
+
+You can also use ``Rexec`` to define a bash alias in a user's ``.bashrc`` file so that it appears that a program is on the user's path::
+
+    alias example.R="Rexec optparse example.R"
