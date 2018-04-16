@@ -1,16 +1,16 @@
 Rbin
 =====
 
-``Rbin`` and ``Rlistbin`` are simple shell scripts to easily access command-line executables installed in the ``bin`` and/or ``exec`` directories of R packages (which are not usually added to a user's PATH when the package is installed because doing so is against CRAN policy).  
+``Rbin`` and ``Rbinlist`` are simple shell scripts to easily access command-line executables installed in the ``bin`` and/or ``exec`` directories of R packages (which are not usually added to a user's PATH when the package is installed because doing so is against CRAN policy).  
 
 Installation
 ------------
 
-To use ``Rbin`` and ``Rlistbin`` add them to your path and mark them executable:: 
+To use ``Rbin`` and ``Rbinlist`` add them to your path and mark them executable:: 
     
     $ curl -O https://github.com/trevorld/Rbin/raw/master/Rbin
-    $ curl -O https://github.com/trevorld/Rbin/raw/master/Rlistbin
-    $ chmod u+x Rbin Rlistbin
+    $ curl -O https://github.com/trevorld/Rbin/raw/master/Rbinlist
+    $ chmod u+x Rbin Rbinlist
     $ cp R*bin $HOME/bin/
 
 Usage
@@ -18,7 +18,7 @@ Usage
 
 Example usage using the example executables from the `optparse <https://github.com/trevorld/optparse>`_ package::
 
-    $ Rlistbin optparse
+    $ Rbinlist optparse
     display_file.R
     example.R
     $ Rbin optparse example.R --help
