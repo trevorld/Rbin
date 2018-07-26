@@ -1,11 +1,11 @@
 Rbin
 =====
 
-``Rbin`` and ``Rbinlist`` are shell scripts to easily call command-line executables installed in the ``bin`` and/or ``exec`` directories of R packages (which are not usually added to a user's PATH when the package is installed because doing so is against CRAN policy).  
-
 .. image:: http://www.repostatus.org/badges/latest/active.svg
    :alt: Project Status: Active – The project has reached a stable, usable state and is being actively developed.
    :target: http://www.repostatus.org/#active
+
+``Rbin`` and ``Rbinlist`` are shell scripts to easily call command-line executables installed in the ``bin`` and/or ``exec`` directories of R packages (which are not usually added to a user's PATH when the package is installed because doing so is against CRAN policy).  
 
 Installation
 ------------
